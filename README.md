@@ -1,3 +1,3 @@
 # gql
 
-### GraphQL & ORM Practice
+### GraphQL & ORM Exercise
