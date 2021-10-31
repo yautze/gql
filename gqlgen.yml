@@ -1,0 +1,27 @@
+schema:
+  - graph/*.graphqls
+
+# Let gqlgen know where to put the generated server
+exec:
+  filename: controller/generated/generated.go
+  package: generated
+
+# Let gqlgen know where to put the generated models (if any)
+model:
+  filename: model/request_input.go
+  package: model
+
+# Let gqlgen know where to put the generated resolver
+resolver:
+  filename: controller/resolver.go
+  package: controller
+
+autobind:
+  - "gql/model"
+
+# schema bind to model struct
+models:
+  User:
+    model: gql/model.User
+  Todo:
+    model: gql/model.Todo

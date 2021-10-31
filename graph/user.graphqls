@@ -1,0 +1,5 @@
+# User 
+type User {
+  id: ID!
+  name: String!
+}
